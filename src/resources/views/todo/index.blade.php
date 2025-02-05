@@ -6,6 +6,7 @@
           <div class="col-md-8">
           <p class="text-left">
           <a class="btn btn-success" href="{{ route('todo.create') }}">ToDoを追加</a>
+          <a class="btn btn-success" href="{{ route('todo.store') }}">'新規作成のルート実行！'</a>
         </p>
             <div class="card">
               <div class="card-header">

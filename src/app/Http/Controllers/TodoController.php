@@ -20,5 +20,18 @@ class TodoController extends Controller
         $title = '新規作成';
         return view('todo.create', ['title' => $title]);
     }
+
+    public function store(Request $request) 
+    {
+        $content = $request->input('content');
+
+        $todo = new Todo(); 
+        $todo->content = $content;
+        $todo->save();
+
+        return redirect()->route('todo.index');
+    } 
+
 }
+
 
