@@ -15,4 +15,10 @@ class TodoController extends Controller
 
         return view('todo.index', ['todos' => $todos]);
     }
+    public function create()
+    {
+        $title = '新規作成';
+        return view('todo.create', ['title' => $title]);
+    }
 }
+
